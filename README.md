@@ -37,7 +37,7 @@ Install a web server on both of your droplets using Caddy, do not configure them
 	file_server
     }
 6. create a service file called caddy.service and put inside of it: 
-    -[Unit]
+    ``[Unit]
     Description=Serve HTML in /var/www using caddy
     After=network.target
 
@@ -49,7 +49,9 @@ Install a web server on both of your droplets using Caddy, do not configure them
     KillMode=mixed
 
     [Install]
-    WantedBy=multi-user.target
+    WantedBy=multi-user.target``
+
+
 7. restart the service using sudo systemctl daemon reload
 8. start the service using sudo systemctl start caddy
 9. enable the service using sudo systemctl enable caddy
@@ -69,7 +71,7 @@ Install a web server on both of your droplets using Caddy, do not configure them
     </html>
 3. Inside of the src folder, run the command *npm init* and *npm i fastify*, this should create a json.package file and a node_modules folder
 4. create an index.js file insde of your src folder and put the following code inside of it:
-    ```const { createReadStream } = require('fs');
+    ``const { createReadStream } = require('fs');
        const fastify = require('fastify')({ logger: true })
 
 // Declare a route
@@ -86,5 +88,5 @@ const start = async () => {
     process.exit(1)
   }
 }
-start()```
+start()``
 4. test your server on your local machine by installing
