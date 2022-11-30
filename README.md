@@ -31,11 +31,11 @@ Install a web server on both of your droplets using Caddy, do not configure them
 3. give caddy root permissiosn using sudo chmod 755 caddy or sudo chown root:root caddy
 4. create  a caddy folder in /etc using sudo mkdir /etc/caddy
 5. create a Caddyfile inside of the caddy folder using sudo touch /etc/caddy/Caddyfile and add the following to the file:
-    -http://143.244.181.177 
+  *  -http://143.244.181.177 
     {
 	root * /var/www
 	file_server
-    }
+    } *
 6. create a service file called caddy.service and put inside of it: 
     -[Unit]
     Description=Serve HTML in /var/www using caddy
