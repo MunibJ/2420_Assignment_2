@@ -37,7 +37,7 @@ Install a web server on both of your droplets using Caddy, do not configure them
 	file_server
     }
 6. create a service file called caddy.service and put inside of it: 
-    ``[Unit]
+    `[Unit]
     Description=Serve HTML in /var/www using caddy
     After=network.target
 
@@ -49,7 +49,7 @@ Install a web server on both of your droplets using Caddy, do not configure them
     KillMode=mixed
 
     [Install]
-    WantedBy=multi-user.target``
+    WantedBy=multi-user.target`
 
 
 7. restart the service using sudo systemctl daemon reload
