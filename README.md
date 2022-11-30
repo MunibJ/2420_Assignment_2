@@ -39,7 +39,8 @@ Install a web server on both of your droplets using Caddy, do not configure them
     }
     ```
 6. create a service file called caddy.service and put inside of it: 
-    `[Unit]
+    ```    
+    [Unit]
     Description=Serve HTML in /var/www using caddy
     After=network.target
 
@@ -51,7 +52,8 @@ Install a web server on both of your droplets using Caddy, do not configure them
     KillMode=mixed
 
     [Install]
-    WantedBy=multi-user.target`
+    WantedBy=multi-user.target
+    ```
 
 
 7. restart the service using sudo systemctl daemon reload
@@ -62,6 +64,7 @@ Install a web server on both of your droplets using Caddy, do not configure them
 ## Step 3:
 1. create a folder and called it whatever you want but inside that folder, create two folders called html and src
 2. Inside of the html folder, create an index.html file and put complete the html file with the following:
+    ```
     -<!DOCTYPE html>
     <html>
     <body>
@@ -71,10 +74,13 @@ Install a web server on both of your droplets using Caddy, do not configure them
 
     </body>
     </html>
+    ```
 3. Inside of the src folder, run the command *npm init* and *npm i fastify*, this should create a json.package file and a node_modules folder
 4. create an index.js file insde of your src folder and put the following code inside of it:
-    ``const { createReadStream } = require('fs');
-       const fastify = require('fastify')({ logger: true })
+    ```
+      const { createReadStream } = require('fs');
+      const fastify = require('fastify')({ logger: true })
+      
 
 // Declare a route
 fastify.get('/', async (request, reply) => {
@@ -90,7 +96,8 @@ const start = async () => {
     process.exit(1)
   }
 }
-start()``
+start()
+```
 4. test your server on your local machine by installing node on your local machine using the following url:
     https://www.fastify.io/docs/latest/Reference/Routes/
 5. after you install it, run it by typing "node index.js" in your terminal
@@ -98,12 +105,14 @@ start()``
 
 ## Step 4: Writing caddyfile server block on your local machine in addition to adding a reverse proxy to your server block
 1. create a caddyfile on your local machine and add the following to it:
-```http://143.244.181.177  
+```
+      http://143.244.181.177  
         {   
         root * /var/www
         reverse_proxy /app localhost:3000
         file_server
-        }```
+        }
+        ```
 2. transfer the caddyfile from your local host to your droplet using rsync command. 
 3. then move the file into your caddy folder using sudo mv caddyfile /etc/caddy/Caddyfile
 
@@ -117,7 +126,8 @@ start()``
 Your service file should restart the service on failure. Your service file should require a configured network
 
 1. create a service file called node.service and put inside of it: 
-    `[Unit]
+    ```
+    [Unit]
     Description=Serve HTML in /var/www using caddy
     After=network.target
 
@@ -129,4 +139,5 @@ Your service file should restart the service on failure. Your service file shoul
     KillMode=mixed
 
     [Install]
-    WantedBy=multi-user.target`
+    WantedBy=multi-user.target
+    ```
