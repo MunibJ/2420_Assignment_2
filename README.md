@@ -2,12 +2,12 @@
 
 Description: This program will create a VPC on digital ocean
 
-# Team Members: 
-    - Name: 	    Munib Javed
+# Team Members:
+```
+      Name: 	    Munib Javed
       Email:        mjaved@my.bcit.ca
       Student #:    A01221306
-
-
+   ```
 # File Structure:
     - README.MD
     - images directory for any images used in the README.MD
