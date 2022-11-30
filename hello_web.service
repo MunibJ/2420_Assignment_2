@@ -1,0 +1,16 @@
+[Unit]
+Description=Making something
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/Munib_Ass2/.volta/bin/node /var/www/src/index.js
+User=Munib_Ass2
+Group=Munib_Ass2
+Restart=always
+RestartSec=10
+TimeoutStopSec=90
+SyslogIdentifier=hello_web
+
+[Install]
+WantedBy=multi-user.target
