@@ -89,4 +89,42 @@ const start = async () => {
   }
 }
 start()``
-4. test your server on your local machine by installing
+4. test your server on your local machine by installing node on your local machine using the following url:
+    https://www.fastify.io/docs/latest/Reference/Routes/
+5. after you install it, run it by typing "node index.js" in your terminal
+6. go to your browser and type in localhost:3000 and you should see your html file
+
+## Step 4: Writing caddyfile server block on your local machine in addition to adding a reverse proxy to your server block
+1. create a caddyfile on your local machine and add the following to it:
+```http://143.244.181.177  
+        {   
+        root * /var/www
+        reverse_proxy /app localhost:3000
+        file_server
+        }```
+2. transfer the caddyfile from your local host to your droplet using rsync command. 
+3. then move the file into your caddy folder using sudo mv caddyfile /etc/caddy/Caddyfile
+
+## Step 5: Installing Volta/Node on your droplets
+1. install volta using the following command: curl https://get.volta.sh | bash
+2. source your bash.rc by doing: source ~/.bashrc
+3. install node using volta install node
+4. install npm using volta install npm
+
+## Step 6: write a service file on your local machine to start your node application.
+Your service file should restart the service on failure. Your service file should require a configured network
+
+1. create a service file called node.service and put inside of it: 
+    `[Unit]
+    Description=Serve HTML in /var/www using caddy
+    After=network.target
+
+    [Service]
+    Type=notify 
+    ExecStart=/usr/bin/caddy run --config /etc/caddy/Caddyfile
+    ExecReload=/usr/bin/caddy reload --config /etc/caddy/Caddyfile
+    TimeoutStopSec=5
+    KillMode=mixed
+
+    [Install]
+    WantedBy=multi-user.target`
