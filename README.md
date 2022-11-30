@@ -80,23 +80,20 @@ Install a web server on both of your droplets using Caddy, do not configure them
     ```
       const { createReadStream } = require('fs');
       const fastify = require('fastify')({ logger: true })
-      
-
-// Declare a route
-fastify.get('/', async (request, reply) => {
-  const stream = await createReadStream('../html/index.html');
-  return reply.type('text/html').send(stream);
-})
-// Run the server!
-const start = async () => {
-  try {
-    await fastify.listen({ port: 3000 })
-  } catch (err) {
-    fastify.log.error(err)
-    process.exit(1)
-  }
-}
-start()
+  
+	fastify.get('/', async (request, reply) => {
+  	const stream = await createReadStream('../html/index.html');
+  	return reply.type('text/html').send(stream);
+	})
+	const start = async () => {
+  	try {
+    	await fastify.listen({ port: 3000 })
+  		} catch (err) {
+    			fastify.log.error(err)
+    				process.exit(1)
+ 				   }
+				}			
+				start()
 ```
 4. test your server on your local machine by installing node on your local machine using the following url:
     https://www.fastify.io/docs/latest/Reference/Routes/
@@ -139,5 +136,4 @@ Your service file should restart the service on failure. Your service file shoul
     KillMode=mixed
 
     [Install]
-    WantedBy=multi-user.target
-    ```
+    WantedBy=multi-user.target```
