@@ -199,7 +199,7 @@ Create a service caddy file
 ## Step 9: Testing your Webapp
 1. inside of one of your html files, change it up to say something else compared to the other droplets so you can differentiate between the two.
 2. go to your browser and type in the ip address of your load balancer and you should see the html file you changed
-3. if you see the html file, it means it worked and you can now go to your load balancer and add the droplets to the load balancer
+3. if you see the html file, it means it worked!
 4. Refresh your browser and you should see the other droplet's html file
 5. You test the `/app` route by going to your browser and typing in the ip address of your load balancer followed by `/app` and you should see the html file you changed.
 
