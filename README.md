@@ -100,7 +100,7 @@ wget https://github.com/caddyserver/caddy/releases/download/v2.6.2/caddy_2.6.2_l
     https://www.fastify.io/docs/latest/Reference/Routes/
     ```
 
-Node Instructions: Inside your droplet, install node using the following command:
+Node Instructions: Inside your local machine, install node using the following command:
 ```
 1.curl https://get.volta.sh | bash
 2.source ~/.bashrc
