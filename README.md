@@ -14,7 +14,8 @@ Description: This program will create a VPC on digital ocean
 ## Step 1: Creating Digital Ocean Infrastructure  
 
 Create A DO Infrastructure by following the video below:
-```https://vimeo.com/775412708/4a219b37e7
+```
+https://vimeo.com/775412708/4a219b37e7
 ```
 It should include these components:
 ```
