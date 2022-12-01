@@ -62,7 +62,7 @@ wget https://github.com/caddyserver/caddy/releases/download/v2.6.2/caddy_2.6.2_l
 
 
 ## Step 4: Write your Webapp 
-1. create a folder called `www` inside of your /var folder and inside that `www` folder and inside that folder, create two folders called `html` and `src`
+1. create a folder called `www` inside of your /var folder,and inside the `www`folder, create two folders called `html` and `src`
 2. Inside of the html folder, create an index.html file and put complete the html file with the following:
     ```
     -<!DOCTYPE html>
