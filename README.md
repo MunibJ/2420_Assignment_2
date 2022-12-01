@@ -2,9 +2,6 @@
 
 Description: This program will create a VPC on digital ocean
 
-# Table Of Content
-1. [Introduction](#introduction)
-    - [Step 1](#step-1)
 # Team Members: 
 ```
       Name: 	  	Munib Javed
