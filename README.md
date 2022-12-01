@@ -147,7 +147,7 @@ The output of `which npm` should be `/home/user/.volta/bin/npm`
 
 
 
-## Step 6: write a caddy service file
+## Step 7: write a caddy service file
 Your service file should restart the service on failure. Your service file should require a configured network
 
 1. create a service file called node.service and put inside of it: 
@@ -171,7 +171,7 @@ Your service file should restart the service on failure. Your service file shoul
 4. start the service using `sudo systemctl start caddy.service`
 5. check the status of the service using `sudo systemctl status caddy.service`
 
-## Step 7: Writing a Node Service File
+## Step 8: Writing a Node Service File
 1. create a service file called node.service and put inside of it: 
     ```
     [Unit]
@@ -196,7 +196,7 @@ Your service file should restart the service on failure. Your service file shoul
 4. start the service using `sudo systemctl start node.service`
 5. check the status of the service using `sudo systemctl status node.service`
 
-## Step 8: Testing your Webapp
+## Step 9: Testing your Webapp
 1. inside of one of your html files, change it up to say something else compared to the other droplets so you can differentiate between the two.
 2. go to your browser and type in the ip address of your load balancer and you should see the html file you changed
 3. if you see the html file, it means it worked and you can now go to your load balancer and add the droplets to the load balancer
