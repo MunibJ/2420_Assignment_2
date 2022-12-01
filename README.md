@@ -11,9 +11,6 @@ Description: This program will create a VPC on digital ocean
 ```
 # Instructions:
 
-# IMPORTANT BEFORE CONTINUING ↓		     
-# `ALL STEPS TAKEN INSIDE ONE DROPLET, MUST BE REPLICATED IN THE OTHER DROPLET`
-
 ## Step 1: Creating Digital Ocean Infrastructure  
 
 Create A DO Infrastructure by following the video below:
@@ -121,6 +118,9 @@ The output of `which npm` should be `/home/user/.volta/bin/npm`
     ```
 8. Your html and src folders should go inside of the /var/www folder on both droplet `(you need to create another www folder in /var again on both droplets)`
 <br>
+<br>
+# IMPORTANT BEFORE CONTINUING ↓		     
+# `ALL STEPS TAKEN INSIDE ONE DROPLET, MUST BE REPLICATED IN THE OTHER DROPLET`
 <br>
 
 ## Step 5: Writing Caddyfile Server Block 
