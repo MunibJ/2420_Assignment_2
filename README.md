@@ -36,10 +36,10 @@ https://learn.bcit.ca/d2l/le/content/877753/viewContent/8037537/View
 <br>
 <br>
 
-## Step 3: Adding Caddy to Droplets
-Install a web server on both of your droplets using Caddy, do not configure them yet.
+## Step 3: Adding Caddy to Local Machine/Droplets
+Install a web server on both of your droplets/Local Machine using Caddy, do not configure them yet.
 
-1. Download the caddy file from: 
+1. Download the caddy file by inputting the command below into your terminal: 
 ```
 wget https://github.com/caddyserver/caddy/releases/download/v2.6.2/caddy_2.6.2_linux_amd64.tar.gz
 ```
