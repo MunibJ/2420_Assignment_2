@@ -120,7 +120,7 @@ The output of `which npm` should be `/home/user/.volta/bin/npm`
 <br>
 <br>
 # IMPORTANT BEFORE CONTINUING ↓		     
-# `ALL STEPS TAKEN INSIDE ONE DROPLET, MUST BE REPLICATED IN THE OTHER DROPLET`
+# `ALL STEPS TAKEN INSIDE ONE DROPLET, MUST BE REPLICATED IN THE OTHER`
 <br>
 
 ## Step 5: Writing Caddyfile Server Block 
