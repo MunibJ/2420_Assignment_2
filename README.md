@@ -112,10 +112,10 @@ The output of `which npm` should be `/home/user/.volta/bin/npm`
 5. after you install it, run it by typing `node index.js` in your terminal
 6. go to your browser and type in `localhost:3000` and you should see your html file
 7. if you can see the HTML file, it means it worked and now you can transfer the html folder and src folder over to both your droplets using the rsync command. Details about the command can be found in link below:
-8. Your html and src folders should go inside of the /var/www folder on both droplet `(you need to create another www folder in /var again on both droplets)`
     ```
     https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps
     ```
+8. Your html and src folders should go inside of the /var/www folder on both droplet `(you need to create another www folder in /var again on both droplets)`
 <br>
 <br>
 
