@@ -3,7 +3,7 @@
 Description: This program will create a VPC on digital ocean
 
 # Team Members: 
-      Name: 	  Munib Javed
+      Name: 	    Munib Javed
       Email:      mjaved@my.bcit.ca
       Student #:  A01221306
 
@@ -203,8 +203,8 @@ Your service file should restart the service on failure. Your service file shoul
 5. You test the `/app` route by going to your browser and typing in the ip address of your load balancer followed by `/app` and you should see the html file you changed.
 
 The end result should look like this:
-![](question9server1.png)
-![](question9server2.png)
+![](/images/question9server1.png)
+![](/images/question9server2.png)
 
 
 `Congrats! You have successfully created a load balancer and deployed a webapp on it.`
