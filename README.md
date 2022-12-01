@@ -148,7 +148,7 @@ The output of `which npm` should be `/home/user/.volta/bin/npm`
 
 
 ## Step 7: write a caddy service file
-Your service file should restart the service on failure. Your service file should require a configured network
+Create a service caddy file
 
 1. create a service file called node.service and put inside of it: 
     ```
