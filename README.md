@@ -3,7 +3,7 @@
 Description: This program will create a VPC on digital ocean
 
 # Team Members: 
-      Name: 	 Munib Javed
+      Name:    Munib Javed
       Email:      mjaved@my.bcit.ca
       Student #:  A01221306
 
