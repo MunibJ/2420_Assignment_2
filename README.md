@@ -203,6 +203,7 @@ Your service file should restart the service on failure. Your service file shoul
 5. You test the `/app` route by going to your browser and typing in the ip address of your load balancer followed by `/app` and you should see the html file you changed.
 
 The end result should look like this:
+
 ![](/images/question9server1.png)
 ![](/images/question9server2.png)
 
