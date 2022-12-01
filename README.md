@@ -150,7 +150,7 @@ The output of `which npm` should be `/home/user/.volta/bin/npm`
 ## Step 7: write a caddy service file
 Create a service caddy file
 
-1. create a service file called node.service and put inside of it: 
+1. create a service file called caddy.service and put inside of it: 
     ```
     [Unit]
     Description=Serve HTML in /var/www using caddy
