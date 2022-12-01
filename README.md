@@ -11,7 +11,7 @@ Description: This program will create a VPC on digital ocean
 ```
 # Instructions:
 
-#IMPORTANT BEFORE CONTINUING ↓		     
+# IMPORTANT BEFORE CONTINUING ↓		     
 # `ALL STEPS TAKEN INSIDE ONE DROPLET, MUST BE REPLICATED IN THE OTHER DROPLET`
 
 ## Step 1: Creating Digital Ocean Infrastructure  
