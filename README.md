@@ -168,7 +168,7 @@ Create a service caddy file
     KillMode=mixed
 
     [Install]
-    WantedBy=multi-user.target```
+    WantedBy=multi-user.target
    ```
 2. move the service file to your /etc/systemd/system folder using `sudo mv caddy.service /etc/systemd/system`
 3. enable the service using `sudo systemctl enable caddy.service`
